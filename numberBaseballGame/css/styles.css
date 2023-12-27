@@ -1,0 +1,153 @@
+.ir-su {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#baseball {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'OTWelcomeRA';
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+#baseball form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#baseball form label {
+    font-size: 24px;
+    line-height: 1.65;
+    text-align: center;
+}
+
+#baseball form input {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#baseball form input::placeholder {
+    text-align: justify;
+}
+
+#baseball form button {
+    font-size: 20px;
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+#baseball form button span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#baseball form button:before,
+#baseball form button:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+#baseball form button:before{
+    height: 0%;
+    width: 2px;
+}
+#baseball form button:after {
+    width: 0%;
+    height: 2px;
+}
+#baseball form button:hover:before {
+    height: 100%;
+}
+#baseball form button:hover:after {
+    width: 100%;
+}
+#baseball form button:hover{
+    background: transparent;
+}
+#baseball form button span:hover{
+    color: #c797eb;
+}
+#baseball form button span:before,
+#baseball form button span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+#baseball form button span:before {
+    width: 2px;
+    height: 0%;
+}
+#baseball form button span:after {
+    height: 2px;
+    width: 0%;
+}
+#baseball form button span:hover:before {
+    height: 100%;
+}
+#baseball form button span:hover:after {
+    width: 100%;
+}
+
+.answerArea > p {
+    line-height: 1.6;
+}
+
+.answerArea > p:first-child {
+    font-weight: 700;
+}
+
+.btnReset {
+    font-size: 20px;
+    line-height: 1.6;
+    cursor: pointer;
+    color: #ddd;
+    transition: color .2s;
+    margin-bottom: 30px;
+}
+
+.btnReset:hover {
+    color: #666
+}

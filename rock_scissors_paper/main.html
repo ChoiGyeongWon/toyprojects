@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <header>
+        <h1>가위바위보</h1>
+    </header>
+    <nav>
+        <button class="score_search btn_nav" type="button">점수판</button>
+        <button class="score_save btn_nav" type="button">점수 저장</button>
+        <button class="reset_button btn_nav" type="button">다시하기</button>
+    </nav>
+    <main>
+        <section id="contentsTop">
+            <h2>컴퓨터</h2>
+            <div class="com_score"><span id="comScore">0</span></div>
+            <h2>사람</h2>
+            <div class="human_score"><span id="humanScore">0</span></div>
+        </section>
+        <section id="contentsLeft">
+            <div class="contentsImg type_1 iteration_1"></div>
+        </section>
+        <section id="contentsRight">
+            <div class="contentsImg type_1 iteration_2"></div>
+        </section>
+        <section id="contentsBottom">
+            <button class="contentsImg type_2 rock" type="button"></button>
+            <button class="contentsImg type_2 scissors" type="button"></button>
+            <button class="contentsImg type_2 paper" type="button"></button>
+        </section>
+    </main>
+    <div class="modal hide">
+        <div class="modal_contents">
+            <div class="modal_header">
+                <button class="modal_close" type="button">X</button>
+            </div>
+            <div class="modal_body">
+                <form action="#">
+                    <table>
+                        <colgroup>
+                            <col width="40%">
+                            <col width="25%">
+                            <col width="25%">
+                            <col width="10%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>컴퓨터 점수</th>
+                                <th>내 점수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>웅</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="modal_footer">
+                <div class="pagination"></div>
+                <div class="delete_wrap">
+                    <button type="button" class="delete_btn">삭제</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal_bg"></div>
+    </div>
+    <script src="./js/common.js"></script>
+</body>
+</html>

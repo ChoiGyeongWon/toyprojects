@@ -1,0 +1,82 @@
+.ir-su {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+
+#stopWatch {
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    min-width: 320px;
+    min-height: 568px;
+    box-sizing: border-box;
+    padding: 15px;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,73,134,1) 18%, rgba(106,105,177,1) 26%, rgba(142,142,226,1) 35%, rgba(122,152,230,1) 44%, rgba(96,165,235,1) 56%, rgba(74,176,240,1) 66%, rgba(54,186,244,1) 75%, rgba(35,195,248,1) 84%, rgba(15,205,252,1) 93%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+#stopWatch h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.timer {
+    font-size: 40px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.timer > div {
+    position: relative;
+    display: inline-block;
+}
+
+.timer > div + div::before {
+    content: ':';
+    position: absolute;
+    left: -12px;
+    top: 41%;
+    transform: translateY(-50%);
+}
+
+.buttonWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.buttonWrap > div {
+    width: 33.3333%;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .4s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.buttonWrap > div:hover {
+    transform: scale(1.1);
+}
+
+.btnStart:hover {
+    color: #7DCE13;
+}
+
+.btnStop:hover {
+    color: #FFE9AE;
+}
+
+.btnReset:hover {
+    color: #F65A83;
+}
+
+.buttonWrap .active {
+    pointer-events: none;
+}
