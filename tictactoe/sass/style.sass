@@ -1,0 +1,131 @@
+body
+    font-family: 'Noto Sans KR', sans-serif
+    font-weight: 400
+
+.c-gate
+    background-color: #ddd
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0px
+    right: 0px
+    top: 0px
+    bottom: 0px
+    gap: 20px
+
+    &__title
+        font-size: 30px
+        font-weight: 900
+        text-align: center
+
+    &__box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 10px
+
+    &__subTitle
+        font-size: 24px
+        font-weight: 500
+
+    &__wrapBtns
+        display: flex
+        gap: 10px
+
+    &__btnStart
+        box-sizing: border-box
+        padding: 25px 20px
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        flex-shrink: 0
+        border-radius: 50%
+        border: 3px solid #999
+        font-size: 20px
+        background-color: #fff
+
+        &:hover
+            background-color: #ddd
+            transition: all .1s
+
+    &--hide
+        display: none
+
+.c-game
+    background-color: #ddd
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0px
+    right: 0px
+    top: 0px
+    bottom: 0px
+    gap: 20px
+
+    &__title
+        font-size: 24px
+        font-weight: 500
+
+    &__areaCells
+
+    &__listWrap
+        display: grid
+        gap: 10px
+        border: 1px solid #999
+        padding: 10px
+        box-sizing: border-box
+        border-radius: 5px
+
+    &__listWrap--cellType1
+        grid-template-columns: repeat(3,1fr)
+
+    &__listWrap--cellType2
+        grid-template-columns: repeat(5,1fr)
+
+    &__btnCell
+        font-size: 0px
+        text-indent: -9999px
+        overflow: hidden
+        width: 30px
+        height: 30px
+        border: 1px solid #999
+        background-color: #fff
+
+        &:hover
+            background-color: #ddd
+            transition: all .1s
+
+    &__btnCell--mark1
+
+        &::before
+            content: "O"
+            font-size: 18px
+            text-indent: initial
+            display: block
+            font-weight: 600
+            line-height: 1
+
+    &__btnCell--mark2
+
+        &::before
+            content: "X"
+            font-size: 18px
+            text-indent: initial
+            display: block
+            font-weight: 600
+            line-height: 1
+
+    &__wrapBtns
+
+    &__btnRestart
+
+    &__btnPrev
+
+    &--hide
+        display: none
